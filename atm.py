@@ -2,15 +2,14 @@ class InsufficientBalanceError(Exception):
   def __init__(self, message="Insufficient balance"):
     self.message = message
     super().__init__(self.message
-                     Mastering Jenkins Pipeline for Seamless Automation
     32
     class InvalidInputError(Exception):
       pass
       class ATM:
-def __init__(self, balance=1000):
-self.balance = balance
-def withdraw(self, amount):
-try:
+        def __init__(self, balance=1000):
+          self.balance = balance
+          def withdraw(self, amount):
+            try:
 amount = float(amount)
 if amount <= 0:
 raise InvalidInputError("Invalid withdrawal amount")
