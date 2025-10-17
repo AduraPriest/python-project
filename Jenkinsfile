@@ -10,7 +10,7 @@ agent any
     stage('Build') {
       steps {
         git branch: 'main', url: 'https://github.com/pgnaik/python_project.git'
-        sh 'python atm.py'
+        sh 'python3 atm.py'
       }
     }
     stage('Test'){
